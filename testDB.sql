@@ -1,3 +1,4 @@
+--test project
 -- DROP TABLES (if they exist)
 DROP TABLE Grade CASCADE CONSTRAINTS;
 DROP TABLE Course CASCADE CONSTRAINTS;
@@ -49,6 +50,7 @@ INSERT INTO Grade VALUES (4, 3, 2, 88.0, 'Fall2023');
 -- Charlie
 INSERT INTO Grade VALUES (5, 2, 3, 91.0, 'Fall2023');
 INSERT INTO Grade VALUES (6, 3, 3, 89.5, 'Fall2023');
+
 
 --grade report for each student
 SELECT
@@ -171,3 +173,6 @@ DELETE FROM Grade
 WHERE Student_ID = 1 AND Course_ID = 1;
 
 SELECT * FROM grade;
+SELECT * FROM student;
+SELECT * FROM test;
+COMMIT;
